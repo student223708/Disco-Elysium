@@ -3,7 +3,7 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 
 # Create your views here.
 def index(request):
@@ -58,4 +58,6 @@ def register(request):
     return render(request, 'main/users/register.html')
 
 def logout_user(request):
-    pass
+    logout(request)
+     
+    return redirect('home')
