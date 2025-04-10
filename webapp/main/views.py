@@ -1,6 +1,9 @@
 # Plik do definiowania widoków, które są renderowane za pomocą szablonizatora Jinja oraz wyświetlane w przeglądarce
 
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
+from django.contrib.auth.models import User
+from django.contrib.auth import login
 
 # Create your views here.
 def index(request):
@@ -47,4 +50,9 @@ def about(request):
     return render(request, 'main/about.html')
 
 def register(request):
+    if request.method == 'POST':
+        user = User.objects.create_user(request.POST['username'], request.POST['email'], request.POST['password'])
+        login(request, user)
+        return redirect('home')
+    
     return render(request, 'main/users/register.html')
