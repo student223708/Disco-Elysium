@@ -47,4 +47,4 @@ def about(request):
     return render(request, 'main/about.html')
 
 def register(request):
-    pass
+    return render(request, 'main/users/register.html')
