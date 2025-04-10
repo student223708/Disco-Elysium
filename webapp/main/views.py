@@ -3,7 +3,8 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
-from django.contrib.auth import login, logout
+from django.contrib.auth import login, logout, authenticate
+from django.contrib import messages #to show message back for errors
 
 # Create your views here.
 def index(request):
@@ -50,6 +51,14 @@ def about(request):
     return render(request, 'main/about.html')
 
 def login_user(request):
+    if request.method == 'POST':
+         user = authenticate(username=request.POST['username'], password=request.POST['password'])
+         if user is not None:
+             login(request, user)
+             return redirect('home')
+         else:
+             messages.error(request, 'Invalid credentials')
+             return redirect('login_user')
     return render(request, 'main/users/login.html')
 
 def register(request):
