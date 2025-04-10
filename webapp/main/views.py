@@ -49,6 +49,9 @@ def cars(request):
 def about(request):
     return render(request, 'main/about.html')
 
+def login_user(request):
+    pass
+
 def register(request):
     if request.method == 'POST':
         user = User.objects.create_user(request.POST['username'], request.POST['email'], request.POST['password'])
