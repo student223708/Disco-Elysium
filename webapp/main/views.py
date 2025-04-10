@@ -50,7 +50,7 @@ def about(request):
     return render(request, 'main/about.html')
 
 def login_user(request):
-    pass
+    return render(request, 'main/users/login.html')
 
 def register(request):
     if request.method == 'POST':
