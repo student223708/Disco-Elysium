@@ -54,6 +54,9 @@ def about(request):
 # Using the Django authentication system (Django Documentation)
 # https://docs.djangoproject.com/en/5.1/topics/auth/default/
 def login_user(request):
+    if request.user.is_authenticated:
+        return redirect('home')
+     
     if request.method == 'POST':
          user = authenticate(username=request.POST['username'], password=request.POST['password'])
          if user is not None:
@@ -72,6 +75,9 @@ def login_user(request):
     return render(request, 'main/users/login.html')
 
 def register(request):
+    if request.user.is_authenticated:
+         return redirect('home')
+    
     if request.method == 'POST':
         user = User.objects.create_user(request.POST['username'], request.POST['email'], request.POST['password'])
         login(request, user)
