@@ -1,66 +1,28 @@
-/*body {*/
-/*    background: #2c2c2c;*/
-/*}*/
+@import url(https://db.onlinewebfonts.com/c/94e7ae3131502f528720e05efd3f8b9e?family=Dobra+W01+Black+Italic); 
 
-/*aside {*/
-/*    float: left;*/
-/*    background: #181818;*/
-/*    width: 20%;*/
-/*    padding: 2.5%;*/
-/*    height: 100vh;*/
-/*    color: #fff;*/
-/*    border-right: 5px solid #4d4d4d*/
-/*}*/
+@font-face {
+    font-family: "Dobra W01 Black Italic";
+    src: url("https://db.onlinewebfonts.com/t/94e7ae3131502f528720e05efd3f8b9e.eot");
+    src: url("https://db.onlinewebfonts.com/t/94e7ae3131502f528720e05efd3f8b9e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/94e7ae3131502f528720e05efd3f8b9e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/94e7ae3131502f528720e05efd3f8b9e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/94e7ae3131502f528720e05efd3f8b9e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/94e7ae3131502f528720e05efd3f8b9e.svg#Dobra W01 Black Italic")format("svg");
+}
 
-/*aside img {*/
-/*    width: 80px;*/
-/*    float: left;*/
+body {
+    background-image: url(/webapp/main/static/main/img/cabinet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-/*}*/
+    color:aliceblue;
+    
+;
+}
 
-/*aside .logo {*/
-/*    font-size: 40px;*/
-/*    margin-left: 10px;*/
-/*    font-weight: bold;*/
-/*    position: relative;*/
-/*    top: -5px;*/
-/*}*/
-
-/*aside h3 {*/
-/*    margin-top: 50px;*/
-/*    font-size: 28px;*/
-/*}*/
-
-/*aside ul {*/
-/*    list-style: none;*/
-/*}*/
-
-/*aside ul li {*/
-/*    color: #fff;*/
-/*    display: block;*/
-/*    margin-top: 20px;*/
-/*    transition: transform .6s ease;*/
-/*}*/
-
-/*aside ul li:hover, aside ul a:hover {*/
-/*    color: #eb5959;*/
-/*    text-decoration: none;*/
-/*    transform: scale(1.05);*/
-/*}*/
-
-/*main .features {*/
-/*    float: left;*/
-/*    color: #fff;*/
-/*    margin-top: 100px;*/
-/*    text-align: center;*/
-/*    width: 75%;*/
-/*}*/
-
-/*main .features h1 {*/
-/*    font-size: 50px;*/
-/*}*/
-
-/*main .features p {*/
-/*    max-width: 400px;*/
-/*    margin: 20px auto;*/
-/*}*/
+h1{
+    color:aliceblue;
+    font-size: 105px;
+    text-shadow: -3px -3px 0px #38bb79;
+    font-family: "Dobra W01 Black Italic"; 
+}
