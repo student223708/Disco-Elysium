@@ -9,9 +9,9 @@ def get_links():
         'href': '/',
         'icon': 'fa-house',
     }, {
-        'name': 'Cars',
-        'href': '/cars',
-        'icon': 'fa-car',
+        'name': 'Find your path',
+        'href': '/skills',
+        'icon': 'fa-brain',
     }, {
         'name': 'Contact',
         'href': '/contact',
@@ -21,7 +21,7 @@ def get_links():
         'href': '/about',
         'icon': 'fa-address-card',
     },{
-        'name': 'News',
+        'name': 'Revachol Courier',
         'href': '/news/',
         'icon': 'fa-newspaper',
     },{
@@ -31,6 +31,6 @@ def get_links():
     },{
         'name': 'Forum',
         'href': '/forum',
-        'icon': 'fa-comment', #look for your icon here https://fontawesome.com/search?ic=free
+        'icon': 'fa-comment',
     }]
     

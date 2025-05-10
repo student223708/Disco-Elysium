@@ -11,13 +11,11 @@
 }
 
 body {
-    background-image: url(/webapp/main/static/main/img/cabinet.jpg);
+    background-image: url(cabinet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
     color:aliceblue;
-    
-;
 }
 
 h1{
@@ -25,4 +23,10 @@ h1{
     font-size: 105px;
     text-shadow: -3px -3px 0px #38bb79;
     font-family: "Dobra W01 Black Italic"; 
+}
+
+.skill_table{
+background-color:dimgray;
+border: solid 5px white;
+color:black;
 }
