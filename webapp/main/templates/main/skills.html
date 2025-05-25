@@ -1,26 +1,42 @@
 {% extends 'main/layout/layout.html' %}
+{% load static %}
 
 {% block title%}Skills{% endblock %}
 
 {% block content%}
     <h1>Apptitudes</h1>
+    <div class="section_background">
+        <section>
+            
+<!--
     <table class="skill_table">
+        
         <thead>
-            <tr>
+            <tr></tr>
                 <th scope="col" class="skill_table">Skill</th>
                 <th scope="col" class="skill_table">Affiliation</th>
                 <th scope="col" class="skill_table">Description</th>
             </tr>
         </thead>
         <tbody>
-        {% for skill in skills %}
-            <tr class="skill_table">
+
+
+
+                <tr class="skill_table">
                 <td class="skill_table">{{ skill.skill }}</td>
                 <td class="skill_table">{{ skill.attribute }}</td>
-{#                Ze znakiem | można dodawać filtry do wyświetlanych w szablonie danych. Np.: variable|lower #}
+                {# Ze znakiem | można dodawać filtry do wyświetlanych w szablonie danych. Np.: variable|lower #}
                 <td class="skill_table">{{ skill.description }}</td>
-            </tr>
-        {% endfor %}
+                </tr>
+            -->
+                
+            <div class="skill_tab">
+                <img src="{% static '/images/Portrait_logic.png' %}" class="tab">
+            </div>
+        </section>
+    </div>
+        <!--
         </tbody>
     </table>
+    -->
 {% endblock %}

@@ -8,4 +8,3 @@ class User(models.Model):
 
     #signature = models.choices()
     #avatar = models.ImageField()
-

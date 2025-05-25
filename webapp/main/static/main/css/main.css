@@ -26,7 +26,68 @@ h1{
 }
 
 .skill_table{
-background-color:dimgray;
-border: solid 5px white;
-color:black;
+    background-color:dimgray;
+    border: solid 5px white;
+    color:black;
+}
+
+
+main{
+margin-left: 100px;
+float:right;
+width:auto;
+}
+
+.sidebar_zone{
+width:280px;
+height: 100%;
+}
+
+.sidebar_button{
+background-color:#38bb79;
+margin-left: -100px;
+margin-top:-100px;
+font-size:55px;
+transition:0.5s;
+}
+
+.sidebar_button:hover{
+background-color:whitesmoke;
+transition: 0.5s;
+
+}
+
+.sidebar_filler{
+width: 280px;
+visibility:hidden;
+height: 100vb;
+float:left;
+background-color: #212529;
+position:absolute;
+transition:0.5s;
+}
+
+section{
+    width:auto;
+    height:auto;
+    background-color: black;
+    margin: 25px;
+}
+
+.tab{
+
+}
+
+.skill_tab:hover{
+    filter:blur(15px);
+    transition: 1s;
+}
+
+.skill_tab{
+    float:left;
+    width:14vb;
+    height:20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
 }

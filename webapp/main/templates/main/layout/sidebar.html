@@ -2,11 +2,14 @@
 {% load sidebar_links %}
 
 {% get_links as links %}
-<div class="sidebar_zone" style="width:280px; height:100%;">
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; height: 100vh; position: fixed;">
+
+
+<div class="sidebar_zone">
+  
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: inherit; height: 100vh; position: fixed;">
     
       <a href="/main/static" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none gap-2">
-        <img src="{% static 'main/img/icon.png' %}" alt="Logo" width="40">
+        <img src="{% static '/img/icon.png' %}"  alt="Logo" width="40">
         <span class="fs-4">Voices of The Pale</span>
       </a>
       <hr>
@@ -49,3 +52,4 @@
       {% endif %}
     </div>
   </div>
+  <div class="sidebar_filler"></div>
