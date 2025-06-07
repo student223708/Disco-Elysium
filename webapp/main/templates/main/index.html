@@ -1,14 +1,18 @@
 {% extends 'main/layout/layout.html' %}
-
+{% load static %}
 {% block title%}Homepage{% endblock %}
 
 {% block content%}
     <h1>Open your eyes</h1>
-    <div class="container">
+    <div class="container" style="background-color: black;  padding-bottom: 25px black;">
         
+        <img src="{% static '/images/philip.jpg' %}" style="width: 95%; height:auto; margin: auto; display:block;">
+        <p style="max-width: 90%; font-size:2.4em; font-family: 'Courier New', Courier, monospace; font-weight: bolder; text-shadow: 2px 2px 4px #000000; margin-left: 25px;">You’re a detective with a unique skill system at your disposal and a whole city to carve your path across. Interrogate unforgettable characters, crack murders or take bribes. Become a hero or an absolute disaster of a human being. </p>
+
+    <a href="https://discoelysium.com/"><button class="btn btn-warning">Learn More</button></a>
     </div>
     {% include 'main/test.html' %}
-    <button class="btn btn-warning">Simply keep on non-existing</button>
+    
 
     
 {% endblock %}

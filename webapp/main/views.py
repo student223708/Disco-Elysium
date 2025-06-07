@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages #to show message back for errors
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 def index(request):
@@ -168,6 +169,9 @@ def skills(request):
 def about(request):
     return render(request, 'main/about.html')
 
+def contact(request):
+    return render(request, 'main/contact.html')
+
 # Using the Django authentication system (Django Documentation)
 # https://docs.djangoproject.com/en/5.1/topics/auth/default/
 def login_user(request):
@@ -201,6 +205,7 @@ def register(request):
         return redirect('home')
     
     return render(request, 'main/users/register.html')
+
 
 def logout_user(request):
     logout(request)

@@ -13,24 +13,16 @@ def get_links():
         'href': '/skills',
         'icon': 'fa-brain',
     }, {
-        'name': 'Contact',
-        'href': '/contact',
-        'icon': 'fa-paper-plane',
+        'name': 'Buy now',
+        'href': 'https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/',
+        'icon': 'fa-cart-shopping',
     }, {
-        'name': 'About',
+        'name': 'Introduction',
         'href': '/about',
-        'icon': 'fa-address-card',
+        'icon': 'fa-book',
     },{
         'name': 'Revachol Courier',
         'href': '/news/',
         'icon': 'fa-newspaper',
-    },{
-        'name': 'Add news',
-        'href': '/news/create',
-        'icon': 'fa-plus',
-    },{
-        'name': 'Forum',
-        'href': '/forum',
-        'icon': 'fa-comment',
-    }]
+    },]
     

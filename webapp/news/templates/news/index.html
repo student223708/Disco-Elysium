@@ -9,10 +9,14 @@
 
         {% for article in news %}
 
-            <div>
-            <h3><a href="/news/{{ article.id }}">{{ article.title }}</a></h3>
-            <p>{{ article.excerpt }}</p>
+        <a href="/news/{{ article.id }}" style="text-decoration: none;">
+            <div class="section_background">
+            <h3 class="article_link">{{ article.title }}</h3>
+            <p class="article_text">{{ article.excerpt }}</p>
             </div>
+        </a>
+
+            <div style="float:left;width:100%;height:40px;"></div>
 
         {% endfor %}
 

@@ -25,6 +25,46 @@ h1{
     font-family: "Dobra W01 Black Italic"; 
 }
 
+h3{
+    color:white;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 63px;
+    text-shadow: whitesmoke 2px 2px;
+    text-decoration:none;
+    
+}
+
+h3:visited{
+    color: white;
+}
+
+.article_text{
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-decoration:none;
+    text-wrap:balance;
+    word-wrap:break-all;
+
+}
+
+.article_link{
+    color:white;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    text-decoration:none;
+    text-wrap:balance;
+    text-align:center;
+    word-wrap:break-all;
+
+}
+
 .skill_table{
     background-color:dimgray;
     border: solid 5px white;
@@ -33,7 +73,7 @@ h1{
 
 
 main{
-margin-left: 100px;
+margin-left: 0px;
 float:right;
 width:auto;
 }
@@ -45,7 +85,7 @@ height: 100%;
 
 .sidebar_button{
 background-color:#38bb79;
-margin-left: -100px;
+margin-left: 0px;
 margin-top:-100px;
 font-size:55px;
 transition:0.5s;
@@ -67,27 +107,65 @@ position:absolute;
 transition:0.5s;
 }
 
+.section_background{
+    background-color: black;
+    width:100%;
+    padding:25px black;
+}
+
 section{
-    width:auto;
+    width:100%;
     height:auto;
     background-color: black;
     margin: 25px;
 }
 
-.tab{
+.skill_desc{
+    position: absolute;
+    font-size:1em;
+    color:whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+    text-wrap:balance;
+    text-align:center;
+    word-wrap:break-all;
 
+    filter:blur(15px);
+    transition:1s;
+    visibility: hidden;
+    width:10%;
+    user-select: none;
 }
 
-.skill_tab:hover{
+.skill_tab{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+
+    float:left;
+    width:16.5%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.tab{
+    flex-shrink: 0;
+    min-width: 100%;
+    max-width: 100%;
+    transition:1s;
+}
+
+
+
+.skill_tab:hover .tab{
     filter:blur(15px);
     transition: 1s;
 }
 
-.skill_tab{
-    float:left;
-    width:14vb;
-    height:20%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 1s;
+.skill_tab:hover .skill_desc{
+    filter:blur(0px);
+    visibility: visible;
 }
